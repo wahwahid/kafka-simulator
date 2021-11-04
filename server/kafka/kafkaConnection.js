@@ -1,17 +1,12 @@
-// Require statement for KafkaMirror npm module
-// ( we made this ;) )
-// Wraps KafkaJS, e.g., abstracts the need to download and use KafkaJS package to interact with Kafka application
-// Alternative to KafkaJS
-const KafkaMirror = require("kafka-mirror-connect");
+const { Kafka, logLevel } = require('kafkajs');
 
-let clientId;
+let clientId = process.env.KAFKA_CLIENTID || process.env.stream || 'dynamic';
 
-if (process.env.stream === "bitcoin") clientId = "bitcoinStream";
-else clientId = "yelpStream";
-
-const kafka = KafkaMirror({
+// Invoked to create a new connection to a Kafka instance using KafkaJS node package
+const kafka = new Kafka({
   clientId,
-  brokers: ["localhost:9092"],
+  brokers: [process.env.KAFKA_BROKER || "localhost:9092"],
+  logLevel: logLevel.INFO
 });
 
 module.exports = kafka;
