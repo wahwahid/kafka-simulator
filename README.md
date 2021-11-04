@@ -16,7 +16,7 @@ The following guides will walk you through starting dynamic kafka topic.
 #### Consumers (Prepared Batch Sub)
 Create .txt file in directory `assets/consumers`. The name of file will be the name of prepared consumer list. Write the name of topics in each line of the file. Please see `assets/consumers/default.txt` for example.
 #### Producers (Prepared Payload Pub)
-Create .json file in directory `assets/producers`. The name of file will be the name of prepared topic event. Write the value/payload of topic message in the file. Please see `assets/producers/my-first-topic.txt` for example.
+Create .json file in directory `assets/producers`. The name of file will be the name of prepared topic event. Write the value/payload of topic message in the file. Please see `assets/producers/my-first-topic.json` for example.
 
 ### Configue The App
 You can change the environment variable from its default value
