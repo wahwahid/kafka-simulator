@@ -1,5 +1,5 @@
 {
-  "name": "kafka-simulate",
+  "name": "kafka-simulator",
   "version": "1.0.0",
   "description": "An open-source Kafka simulator.",
   "main": "app.js",
@@ -17,8 +17,15 @@
   "dependencies": {
     "express": "^4.17.1",
     "kafkajs": "^1.0.2",
-    "nodemon": "^2.0.6",
-    "socket.io": "^3.0.4",
-    "ws": "^7.4.1"
-  }
+    "nodemon": "^2.0.6"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wahwahid/kafka-simulator.git"
+  },
+  "bugs": {
+    "url": "https://github.com/wahwahid/kafka-simulator/issues"
+  },
+  "homepage": "https://github.com/wahwahid/kafka-simulator#readme"
 }
