@@ -8,7 +8,8 @@ const app = express();
 // Consumes and produces events to specified Kafka broker
 runDynamicStream(app);
 
-// Listens on port 3001
-app.listen(3001, () => {
-  console.log("Listening on 3001");
+// Listens on port
+const port = process.env.PORT || 3001
+app.listen(port, () => {
+  console.log(`Listening on ${port}`);
 });

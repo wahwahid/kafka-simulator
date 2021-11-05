@@ -21,6 +21,7 @@ Create .json file in directory `assets/producers`. The name of file will be the 
 ### Configue The App
 You can change the environment variable from its default value
 ```env
+PORT=3001
 KAFKA_BROKER="localhost:9092"
 KAFKA_CLIENTID="dynamic"
 KAFKA_GROUPID="dynamic-server"
